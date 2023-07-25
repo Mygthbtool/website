@@ -1,0 +1,76 @@
+$color-primary:#cc8624;
+$color-secondary: #cc2475;
+$color-tertiary: #2469cc;
+$color-green: #24cc24;
+
+$colors: ($color-primary:#cc8624, $color-secondary: #cc2475,
+          $color-tertiary:#2469cc, $color-green: #24cc24);
+
+          
+@mixin art-headline-clr($colors){
+            color: map-get($colors, $clr);
+}
+    
+@mixin art-headline-clr($colors) {
+        @each $clr, $val in $colors {
+            &--#{$clr}{
+                color: map-get($colors, $clr);
+            }
+        }    
+    }          
+
+
+
+
+.header {
+   background-color: pink;
+   &__heading{
+    color: blue;
+       &--red{
+          color: red;
+       }
+       &--green{
+          color: green;
+       }
+       &--yellow{
+        color: yellow;
+       }
+   }
+   .alfa{
+    font-size: 22px;
+    color: blue;
+   }
+}
+body {
+    background-color: yellow; 
+}
+ul{
+    background-color:khaki;
+    list-style: none;
+    text-align: right;
+    text-decoration: none;
+    word-spacing: 2cm;
+    
+        li{
+            display: inline;        
+            font-size: 18px;
+                a {
+
+                    text-decoration: none;
+
+                        &:hover{
+                            background-color: rgb(191, 144, 198);
+                            color: black;
+                            text-transform: uppercase;
+                        }
+                }  
+        }
+}
+ .article__heading {
+    @include art-headline-clr($colors)
+ }
+
+
+
+
+

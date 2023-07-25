@@ -1,0 +1,43 @@
+.header {
+  background-color: pink;
+}
+.header__heading {
+  color: blue;
+}
+.header__heading--red {
+  color: red;
+}
+.header__heading--green {
+  color: green;
+}
+.header__heading--yellow {
+  color: yellow;
+}
+.header .alfa {
+  font-size: 22px;
+  color: blue;
+}
+
+body {
+  background-color: yellow;
+}
+
+ul {
+  background-color: khaki;
+  list-style: none;
+  text-align: right;
+  text-decoration: none;
+  word-spacing: 2cm;
+}
+ul li {
+  display: inline;
+  font-size: 18px;
+}
+ul li a {
+  text-decoration: none;
+}
+ul li a:hover {
+  background-color: rgb(191, 144, 198);
+  color: black;
+  text-transform: uppercase;
+}/*# sourceMappingURL=main.css.map */
